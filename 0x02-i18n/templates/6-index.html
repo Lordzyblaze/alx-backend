@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+	<head>
+		<!-- HEAD -->
+	   
+		<title>{ _('home_title') }}</title>
+		
+	</head>
+	<body>
+	
+		<!-- HER -->
+		
+		<header>
+		
+			<h1>{{_('home_header') }}</h1>
+			{% if g.user %}
+	       	        <p>{{ _('logged_in_as', username=g.user['name']) }}</p>
+		
+			{% else %}
+			
+			<p>{{ _('not logged_in') }}</p>
+			
+ 
+			{% eif %}
+			
+			</header> 
+				
+	</body>
+</html>
